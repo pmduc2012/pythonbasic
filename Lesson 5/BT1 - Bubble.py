@@ -17,5 +17,6 @@ for char in CharList:
 
 CharList3 = sorted(CharList2)
 CharList4 = reversed(CharList3)
-# Sort z -> a of
+# Sort z -> a of CharList4
+
 print(list(CharList4))
