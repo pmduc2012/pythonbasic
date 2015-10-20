@@ -11,7 +11,7 @@ class BMI:
 
 
     def getBMI(self):
-        return (self.weight * 0.45) / ((self.height * 0.0254) ** 2 )
+        return self.weight * 0.45 / ((self.height * 0.0254) ** 2)
 
     def getStatus(self):
         if self.getBMI() < 18.5:
@@ -31,7 +31,7 @@ class BMI:
 
 class UseGetBMI(BMI):
     bmi1 = BMI('Kim Yang', 145, 70, 18)
-    print('The BMI for', bmi1.getName(), ' is ', ':.2f'.format(bmi1.getBMI()) , ' ', bmi1.getStatus())
+    print('The BMI for', bmi1.getName(), ' is ', bmi1.getBMI() , ' ', bmi1.getStatus())
     bmi1.checkName()
     bmi2 = BMI('Susan King', 215, 70)
     print('The BMI for', bmi2.getName(), ' is ', bmi2.getBMI(), ' ', bmi2.getStatus())
