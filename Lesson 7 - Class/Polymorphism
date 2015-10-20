@@ -1,0 +1,29 @@
+class Animals():
+    def __init__(self, say):
+        self.say = say
+
+    def sayAnimal(self):
+        return self.say
+
+class Tiger(Animals):
+    pass
+class Elephant(Animals):
+    pass
+class Cat(Animals):
+    pass
+class Dog(Animals):
+    pass
+class Rabbit(Animals):
+    pass
+
+tiger = Tiger('grww grww')
+elephant = Elephant('trumpet')
+cat = Cat('mew mew')
+dog = Dog('gau gau')
+rabbit = Rabbit('oe oe')
+
+animals = [tiger, elephant, cat, dog, rabbit]
+
+for animal in animals:
+    print(type(animal).__name__, 'say', animal.sayAnimal())
+
