@@ -1,29 +1,39 @@
 class Animals():
-    def __init__(self, say):
-        self.say = say
+    def __init__(self, name):
+        self.name = name
 
-    def sayAnimal(self):
-        return self.say
+    def animalSay(self):
+        pass
 
 class Tiger(Animals):
-    pass
-class Elephant(Animals):
-    pass
-class Cat(Animals):
-    pass
-class Dog(Animals):
-    pass
-class Rabbit(Animals):
-    pass
+    def animalSay(self):
+        return 'grwww'
 
-tiger = Tiger('grww grww')
-elephant = Elephant('trumpet')
-cat = Cat('mew mew')
-dog = Dog('gau gau')
-rabbit = Rabbit('oe oe')
+class Elephant(Animals):
+    def animalSay(self):
+        return 'trumpet'
+
+class Cat(Animals):
+    def animalSay(self):
+        return 'meo meo'
+
+class Dog(Animals):
+    def animalSay(self):
+        return 'gau gau'
+
+class Rabbit(Animals):
+    def animalSay(self):
+        return 'oe oe'
+
+tiger = Tiger('tiger')
+elephant = Elephant('elephant')
+cat = Cat('cat')
+dog = Dog('dog')
+rabbit = Rabbit('rabbit')
+
 
 animals = [tiger, elephant, cat, dog, rabbit]
 
 for animal in animals:
-    print(type(animal).__name__, 'say', animal.sayAnimal())
+    print(type(animal).__name__, 'say', animal.animalSay() )
 
