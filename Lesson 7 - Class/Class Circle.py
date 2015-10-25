@@ -1,20 +1,17 @@
 __author__ = 'MinhDuc'
 import math
 class Circle:
-    radius = 1
+    def __init__(self, radius):
+        self.radius = radius
 
-    @staticmethod
-    def setradius(newradius):
-        Circle.radius = newradius
+    def getarea(self):
+        return self.radius ** 2 * math.pi
 
-    @staticmethod
-    def getarea():
-        return Circle.radius ** 2 * math.pi
+    def getprimeter(self):
+        return self.radius * 2 * math.pi
 
-    @staticmethod
-    def getprimeter():
-        return Circle.radius * 2 * math.pi
+circle1 = Circle(20)
+circle2 = Circle(10)
 
-Circle.setradius(5)
-
-print('Radius:', Circle.radius, ', Area: ', Circle.getarea(), ', Primeter: ', Circle.getprimeter())
+print('Radius: ', circle1.radius, ' | Area: ', circle1.getarea(), ' | Primeter: ', circle1.getprimeter())
+print('Radius: ', circle2.radius, ' | Area: ', circle2.getarea(), ' | Primeter: ', circle2.getprimeter())
