@@ -23,7 +23,6 @@ def oper(i):
 
 for j in A:
     Infix.append(j)
-print(Infix)
 
 for k in Infix:
 
