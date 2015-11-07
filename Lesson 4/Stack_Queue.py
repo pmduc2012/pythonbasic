@@ -4,7 +4,6 @@ A = '20+3*4-(5+6)/7'
 Infix = []
 Postfix = []
 Stack = []
-Prefix = []
 
 def prec(i):
     if i is '(':
@@ -47,4 +46,3 @@ for k in Infix:
 while len(Stack) > 0:
     Postfix.append(Stack.pop())
 print(''.join(Postfix))
-prec(''.join(Prefix))
