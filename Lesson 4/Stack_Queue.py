@@ -16,10 +16,8 @@ def prec(i):
 def oper(i):
     if i is '+' or i is '-' or i is '*' or i is '/':
         return 'operator'
-    elif i is '(':
-        return 'left'
-    elif i is ')':
-        return 'right'
+    elif i is '(' or i is ')':
+        return 'bracket'
     else:
         return 'operand'
 
